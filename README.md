@@ -47,8 +47,8 @@ trading-platform/
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/trading-platform.git
-    cd trading-platform/
+    git clone https://github.com/kzaho/MoneyHoneyFastPython.git
+    cd MoneyHoneyFastPython/
     ```
 
 2. **Build and Run with Docker**
