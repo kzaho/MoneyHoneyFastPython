@@ -1,10 +1,15 @@
+import os
 import streamlit as st
 import requests
 import pandas as pd
 from datetime import datetime
 
+# Using the service name defined in docker-compose for internal networking
+API_URL = "http://api:8000"
 
-API_URL = "http://127.0.0.1:8000"  # Using the service name defined in docker-compose for internal networking
+dev_mode = os.environ.get("DEV", False)
+if dev_mode:
+    API_URL = "http://127.0.0.1:8000"
 
 st.title("Trading Algorithm Dashboard")
 
